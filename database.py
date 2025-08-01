@@ -8,7 +8,7 @@ def get_connection():
     return psycopg2.connect(SUPABASE_URL)
 
 def init_db():
-    pass  # Tablas ya se crean en Supabase
+    pass  # Las tablas ya están creadas en Supabase
 
 def insertar_albaran(numero, tienda, cantidad):
     fecha = datetime.now()
