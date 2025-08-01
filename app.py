@@ -11,12 +11,6 @@ st.info(f"📡 Conectando a: {os.getenv('SUPABASE_URL')}")
 
 init_db()
 
-if "usuario" not in st.session_state:
-    st.session_state.usuario = st.text_input("Introduce tu nombre de usuario:", "")
-    st.stop()
-
-usuario = st.session_state.usuario
-
 tabs = st.tabs(["➕ Albarán", "⚠️ Incidencia", "📋 Ver incidencias"])
 
 with tabs[0]:
@@ -37,7 +31,7 @@ with tabs[1]:
     else:
         albaran = st.selectbox("Selecciona albarán", albaranes)
         tienda = st.text_input("Tienda")
-        tipo = st.selectbox("Tipo", ["Faltan", "Sobra", "Otro"])
+        tipo = st.selectbox("Tipo", ["Faltan", "Sobra","Diferencia de talla", "Fallo color", "Fallo transfer", "Otro"])
         estado = st.selectbox("Estado", ["Pendiente", "Resuelto"])
         desc = st.text_area("Descripción")
         ajuste = st.number_input("Cantidad a ajustar", min_value=0)
