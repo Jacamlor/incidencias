@@ -7,4 +7,4 @@ services:
     startCommand: streamlit run app.py --server.port=10000 --server.enableCORS=false
     envVars:
       - key: SUPABASE_URL
-        value: postgresql://postgres:TUPASS@db.TUHOST.supabase.co:5432/TUBASE
+        value: postgresql://postgres:dkZKG77K.@db.onrmliubiwqfczmmezzj.supabase.co:5432/postgres
