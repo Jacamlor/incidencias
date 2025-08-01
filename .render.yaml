@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: incidencias-app
+    name: Incidencias
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
