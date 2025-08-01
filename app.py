@@ -6,6 +6,7 @@ from database import init_db, insertar_albaran, obtener_albaranes, ajustar_canti
 st.set_page_config(page_title="Incidencias", layout="wide")
 st.title("📦 Registro de Incidencias")
 
+# Mostrar conexión
 st.info(f"📡 Conectando a: {os.getenv('SUPABASE_URL')}")
 
 init_db()
